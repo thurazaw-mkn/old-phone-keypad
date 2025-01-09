@@ -37,10 +37,11 @@ public class OldPhoneKeypad
         StringBuilder output = new StringBuilder();
         StringBuilder currentInput = new StringBuilder();
         char? lastKey = null;
+        List<string> sequences = new List<string>();
 
         foreach (char c in input)
         {
-            if (c == '#')
+            if (c == '#') 
             {
                 if (currentInput.Length > 0)
                 {
@@ -48,42 +49,53 @@ public class OldPhoneKeypad
                 }
                 break;
             }
-            else if (c == ' ')
+            else if (c == ' ') 
             {
                 if (currentInput.Length > 0)
                 {
                     output.Append(ConvertInputToText(currentInput.ToString()));
+                    sequences.Add(currentInput.ToString());
                     currentInput.Clear();
                 }
                 lastKey = null; 
             }
-            else if (c == '*')
+            else if (c == '*') 
             {
-                if (currentInput.Length > 0)
+                if (sequences.Count > 0)
                 {
-                    currentInput.Length--; // Just delete the last character
+                    string lastSequence = sequences[sequences.Count - 1];
+                    if (currentInput.Length >= lastSequence.Length)
+                    {
+                        currentInput.Remove(currentInput.Length - lastSequence.Length, lastSequence.Length);
+                    }
+                    else
+                    {
+                        currentInput.Length--;
+                    }
+                    sequences.RemoveAt(sequences.Count - 1);
                 }
             }
             else if (keyMap.ContainsKey(c))
             {
-                if (lastKey == c)
+                if (lastKey == c) 
                 {
                     currentInput.Append(c);
                 }
-                else
+                else // New key pressed
                 {
                     if (currentInput.Length > 0)
                     {
                         output.Append(ConvertInputToText(currentInput.ToString()));
+                        sequences.Add(currentInput.ToString());
                         currentInput.Clear();
                     }
                     currentInput.Append(c);
                 }
-                lastKey = c;
+                lastKey = c; 
             }
             else
             {
-                output.Append("Invalid Input ");
+                output.Append("Invalid Input (" + c + ")");
             }
         }
 
@@ -97,6 +109,5 @@ public class OldPhoneKeypad
         Console.WriteLine(OldPhonePad("227*#")); // -> B
         Console.WriteLine(OldPhonePad("4433555 555666#")); // -> HELLO
         Console.WriteLine(OldPhonePad("8 88777444666*664#")); // -> TURING
-        //Console.WriteLine(OldPhonePad("BLA BLA #")); // -> Error
     }
 }
