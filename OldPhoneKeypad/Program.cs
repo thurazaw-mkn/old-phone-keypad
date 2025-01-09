@@ -81,7 +81,7 @@ public class OldPhoneKeypad
                 {
                     currentInput.Append(c);
                 }
-                else // New key pressed
+                else
                 {
                     if (currentInput.Length > 0)
                     {
