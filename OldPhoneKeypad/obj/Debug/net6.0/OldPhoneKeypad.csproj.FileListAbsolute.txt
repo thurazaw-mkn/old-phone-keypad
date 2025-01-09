@@ -1,0 +1,15 @@
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/bin/Debug/net6.0/OldPhoneKeypad
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/bin/Debug/net6.0/OldPhoneKeypad.deps.json
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/bin/Debug/net6.0/OldPhoneKeypad.runtimeconfig.json
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/bin/Debug/net6.0/OldPhoneKeypad.dll
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/bin/Debug/net6.0/OldPhoneKeypad.pdb
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.csproj.AssemblyReference.cache
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.AssemblyInfoInputs.cache
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.AssemblyInfo.cs
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.csproj.CoreCompileInputs.cache
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.dll
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/refint/OldPhoneKeypad.dll
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.pdb
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/OldPhoneKeypad.genruntimeconfig.cache
+/Users/thurazaw/Desktop/Revision/dotnet/OldPhoneKeypad/OldPhoneKeypad/obj/Debug/net6.0/ref/OldPhoneKeypad.dll
